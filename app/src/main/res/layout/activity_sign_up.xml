@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.SignUp">
+
+    <ProgressBar
+        android:id="@+id/signup_google_progress_bar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_public_chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_google_progress_bar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/register"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/join_us"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <!-- SignUp with Google Account -->
+
+    <Button
+        android:id="@+id/continue_google_btn"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_shape_primary"
+        android:text="@string/signup_with_google"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <!-- SignUp with Email -->
+    <Button
+        android:id="@+id/signup_email_btn"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_shape_signup_email"
+        android:text="@string/signup_with_email"
+        android:textColor="@color/colorTextInWhiteBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continue_google_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

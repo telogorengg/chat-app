@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF705B</color>
+    <color name="colorPrimaryDark">#D84D38</color>
+    <color name="colorAccent">#FF705B</color>
+    <color name="colorSecondary">#055AAC</color>
+    <color name="colorBorder">#707070</color>
+    <color name="colorTextInWhiteBtn">#484848</color>
+    <color name="colorTextInForm">#727272</color>
+    <color name="colorBubblesChat">#EDEDED</color>
+</resources>

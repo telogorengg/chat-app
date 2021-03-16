@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBubblesChat"
+    tools:context=".view.activity.Profile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_toolbar">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/background_profile" />
+
+        <ProgressBar
+            android:id="@+id/profile_progress_bar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center" />
+
+        <!-- PROFILE -->
+
+        <!-- Username -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/username"
+            android:textColor="@color/colorTextInForm"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:text="george123" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/email"
+            android:textColor="@color/colorTextInForm"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            tools:text="george@gmail.com" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="154dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_shape_primary"
+        android:text="@string/logout"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

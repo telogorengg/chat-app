@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".view.activity.PublicChat">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/public_chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/chat_progress_bar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/public_chat_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/public_chat_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="120dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/public_chat_toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/chat_room" />
+
+    <!-- Input message -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="10dp"
+            android:maxHeight="150dp"
+            android:paddingStart="22dp"
+            android:paddingTop="11dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="11dp"
+            android:background="@drawable/rounded_edtitext"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:hint="@string/write_message"
+            android:inputType="textCapSentences|textMultiLine"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/send_message_fab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/icon_send"
+            app:borderWidth="0dp"
+            app:fabCustomSize="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/input_message"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:tint="@android:color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Public Chat</string>
+    <string name="welcome">Selamat Datang di Public Chat</string>
+    <string name="illustration">Illustration</string>
+    <string name="register">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="join_us">Ayo Bergabung dengan Kami</string>
+    <string name="signup_with_google">Lanjutkan dengan Akun Google</string>
+    <string name="signup_with_email">Daftar dengan Email</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_with_email">Masuk</string>
+    <string name="google_account">Masuk dengan Akun Google</string>
+    <string name="halo">Halo</string>
+    <string name="public_chat">Public Chat</string>
+    <string name="profile">Profil</string>
+    <string name="logout">Keluar</string>
+    <string name="write_message">Tulis pesan</string>
+</resources>

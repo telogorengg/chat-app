@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "852404924152",
+    "firebase_url": "https://publicchat-858d0.firebaseio.com",
+    "project_id": "publicchat-858d0",
+    "storage_bucket": "publicchat-858d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852404924152:android:81b335f26c8b3aba8e550d",
+        "android_client_info": {
+          "package_name": "com.example.publicchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852404924152-7qkc040uqnoskvp9k8s92h11rffhh724.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.publicchat",
+            "certificate_hash": "6c6a9e09c05768d413bfae6df59eb10b7a770fcf"
+          }
+        },
+        {
+          "client_id": "852404924152-arc2urcr7s6nbtu4hqcnc5v6a1r11091.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW7Hbkx8-Xi_kukQAHARq4O8YNDQ8CkMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852404924152-arc2urcr7s6nbtu4hqcnc5v6a1r11091.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
